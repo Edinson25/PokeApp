@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeApp</title>
+    <link rel="stylesheet" href="custom.css">
+    <!-- Se usa libreria Swipper para las animaciones -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="shortcut icon" href="img/pikachu.png" type="image/x-icon">
+
+</head>
+
+<body>
+  
+    <section>
+        <!-- <div class="circulo"></div> -->
+        <header>
+            <a href="" class="logo">PokeApp<span>.</span></a>
+            <div class="funcionNav" onclick="navFuncion()"></div>
+            <ul class="navegador">
+                <li><a href="" onclick="navFuncion()">Home</a></li>
+                <li><a href="pokemons.html" onclick="navFuncion()">Pokemons</a></li>
+                <li><a href="" onclick="navFuncion()">Nosotros</a></li>
+                <li><a href="" onclick="navFuncion()">Contact</a></li>
+                
+            </ul>
+        </header>
+
+        <div class="contenedor">
+            <div class="textBx">
+                <h2>Hazte con Todos!</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex nihil eveniet voluptates aliquid? Cupiditate necessitatibus similique illo culpa nemo. Laudantium ab doloribus pariatur porro enim! Veniam repudiandae sunt earum blanditiis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis aliquid, id omnis voluptatsicing elit. Rerum eius quisquam distinctio aperiam sapiente, earum magnam animi veritatis reprehenderit. Est, ullam magnam odit delectus animi tempora consectetur modi expedita reprehenderit.</p>
+                <a href="">SEGUIR AVENTURA!</a>
+            </div>
+
+            <div class="imgBx">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="img/Poke5.png"/>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/Poke4.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/arbuk.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/Poke1.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/Poke3.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/Poke2.png "/>
+                </div>
+              </div>
+            </div>
+             
+        </div>
+        </div>
+      
+      <ul class="redes">
+        <li><a href=""><img src="img/facebook.png" alt=""></a></li>
+        <li><a href=""><img src="img/instagram.png" alt=""></a></li>
+        <li><a href=""><img src="img/twitter.png" alt=""></a></li>
+      </ul>
+    </section>
+
+    <footer>
+        <div class="derechos">
+            <p>Copyright 2022 <span>Edinson Morales</span> Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 200,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        loop:true,
+      });
+
+
+      function navFuncion(){
+            const funcionNav = document.querySelector('.funcionNav');
+            const navegador= document.querySelector('.navegador')
+            funcionNav.classList.toggle('active');
+            navegador.classList.toggle('active')
+        }
+
+      
+    </script>
+
+    
+</body>
+</html>

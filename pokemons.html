@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pokemons.css">
+   <!-- <link rel="stylesheet" href="custom.css"> -->
+</head>
+<body>
+    
+    <header>
+        <a href="" class="logo">PokeApp<span>.</span></a>
+        <div class="funcionNav" onclick="navFuncion()"></div>
+        <ul class="navegador">
+            <li><a href="index.html" onclick="navFuncion()">Home</a></li>
+            <li><a href="pokemons.html" onclick="navFuncion()">Pokemons</a></li>
+            <li><a href="nosotros.html" onclick="navFuncion()">Nosotros</a></li>
+            <li><a href="" onclick="navFuncion()">Contact</a></li>
+            
+        </ul>
+    </header>
+   
+    
+
+    
+
+    <section class="menu" id="menu">
+        <div class="titulo">
+            <h2 class="Titulo-texto"><span>P</span>okemons</h2>
+            
+            <p class="sub">Encuentra tu <span>Pokemon</span> Favorito!
+                
+            </p>
+            <br>
+            <div class="cntr">
+                <div class="cntr-innr">
+                  <label class="search" for="inpt_search">
+                        <input id="inpt_search" type="text" />
+                    </label>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="content">
+
+            </div>
+
+           
+            </div>
+        </div>
+
+        
+        <div class="titulo">
+            <a href="" class="btn">View All</a>
+        </div>
+        
+    </section>
+
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0)
+        })
+
+        window.addEventListener('scroll', function(){
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0)
+        })
+
+        function navFuncion(){
+            const funcionNav = document.querySelector('.funcionNav');
+            const navegador= document.querySelector('.navegador')
+            funcionNav.classList.toggle('active');
+            navegador.classList.toggle('active')
+        }
+        
+    </script>
+
+    <script src="pokemons.js"></script>
+</body>
+</html>

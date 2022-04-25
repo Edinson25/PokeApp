@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/dashboard2.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="navegador">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon"><img src="img/logo.png" alt=""></span>
+                        <span class="titulo">PokeApp</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="grid-outline"></ion-icon></span>
+                        <span class="titulo">Dashboard</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+                        <span class="titulo">Customers</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
+                        <span class="titulo">Message</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="list-outline"></ion-icon></span>
+                        <span class="titulo">Pokemons</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+                        <span class="titulo">Settings</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                        <span class="titulo">Password</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html">
+                        <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                        <span class="titulo">Sing Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- main -->
+
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+        <!-- buscador -->
+                <div class="buscador">
+                
+                    <form action="" onsubmit="BuscarPokemon(event)">
+                        <input type="text" placeholder="Escribe un pokemon" name="pokemon" autocomplete="off">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </form>
+                </div>
+        
+        <!-- usuario -->
+            <div class="usuario">
+                <img src="img/user.jpg" alt="">
+            </div>
+            </div>
+        <!-- cards -->
+
+        <div class="cardBx">
+            <div class="card">
+                <div>
+                    <div data-poke-nombre class="numeros">?</div>
+                    <div class="cardName">Nombre Pokemon</div>
+                </div>
+
+                <div class="iconBx">
+                    <img poke-sprite src="img/logo.png" alt="">
+                </div>
+            </div>
+
+            <div class="card">
+                <div>
+                    <div data-poke-experiencia class="numeros">?</div>
+                    <div class="cardName">Experiencia Base</div>
+                </div>
+
+                <div class="iconBx">
+                    <img src="img/flecha-hacia-arriba.png" alt="">
+                </div>
+            </div>
+
+            <div class="card">
+                <div>
+                    <div data-poke-peso class="numeros">?</div>
+                    <div class="cardName">Peso</div>
+                </div>
+
+                <div class="iconBx">
+                    <img src="img/peso.png" alt="">
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div>
+                    <div data-poke-altura class="numeros">?</div>
+                    <div class="cardName">Altura</div>
+                </div>
+
+                <div class="iconBx">
+                    <img src="img/altura.png" alt="">
+                </div>
+            </div>
+           
+        </div>
+
+
+        <!-- Graficos -->
+
+        <div class="graficosBx">
+            
+            <div class="box">
+                <div class="cardHeader">
+                    <h2>Pokemon Por Generaciones</h2>
+                </div>
+                <canvas id="myChart"></canvas>
+            </div>
+            <div class="box">
+                <div class="cardHeader">
+                    <h2>Tipo de especies</h2>
+                </div>
+                <canvas id="earning"></canvas>
+            </div>
+        </div>
+
+
+        <!-- Lista -->
+
+        <div class="detalles">
+            <div class="recientes">
+                <div class="cardHeader">
+                    <h2>Lista de Pokemons</h2>
+                    <a href="" class="btn">View All</a>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Nombre</td>
+                            <td>Experiencia</td>
+                            <td>Peso</td>
+                            <td>Altura</td>
+                        </tr>
+                    </thead>
+                    <tbody class="contenedor-tabla">
+                      
+
+                        
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Nuevos -->
+
+            <div class="recientesPokemons">
+                <div class="cardHeader">
+                    <h2>Skins</h2>
+                </div>
+                <table>
+                    <tr>
+                        <td width="60px"><div class="imgBx"><img src="img/recientes1.jpg" alt=""></div></td>
+                        <td><h4>David <br><span>Italy</span></h4></td>
+                    </tr>
+
+                    <tr>
+                        <td width="60px"><div class="imgBx"><img src="img/recientes1.jpg" alt=""></div></td>
+                        <td><h4>David <br><span>Italy</span></h4></td>
+                    </tr>
+
+                    <tr>
+                        <td width="60px"><div class="imgBx"><img src="img/recientes1.jpg" alt=""></div></td>
+                        <td><h4>David <br><span>Italy</span></h4></td>
+                    </tr>
+
+                    <tr>
+                        <td width="60px"><div class="imgBx"><img src="img/recientes1.jpg" alt=""></div></td>
+                        <td><h4>David <br><span>Italy</span></h4></td>
+                    </tr>
+
+
+                    <tr>
+                        <td width="60px"><div class="imgBx"><img src="img/recientes1.jpg" alt=""></div></td>
+                        <td><h4>David <br><span>Italy</span></h4></td>
+                    </tr>
+
+                    <tr>
+                        <td width="60px"><div class="imgBx"><img src="img/recientes1.jpg" alt=""></div></td>
+                        <td><h4>David <br><span>Italy</span></h4></td>
+                    </tr>
+
+                    <tr>
+                        <td width="60px"><div class="imgBx"><img src="img/recientes1.jpg" alt=""></div></td>
+                        <td><h4>David <br><span>Italy</span></h4></td>
+                    </tr>
+
+                    <tr>
+                        <td width="60px"><div class="imgBx"><img src="img/recientes1.jpg" alt=""></div></td>
+                        <td><h4>David <br><span>Italy</span></h4></td>
+                    </tr>
+                    
+                </table>
+            </div>
+        </div>
+
+        </div>
+    </div>
+
+    <script src="js/dashboard.js"></script>
+    <script src="js/tabla.js"></script>
+    <script src="js/graficas.js"></script>
+    <script src="js/infodashboard.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>

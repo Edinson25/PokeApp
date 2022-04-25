@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../css/dashboard2.css">
+    <link rel="shortcut icon" href="../img/dashboard.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/animacion.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="navegador">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon"><img src="../img/logo.png" alt=""></span>
+                        <span class="titulo">PokeApp</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="grid-outline"></ion-icon></span>
+                        <span class="titulo">Dashboard</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../views_dashboard/pokelsita.html">
+                        <span class="icon"><ion-icon name="list-outline"></ion-icon></span>
+                        <span class="titulo">Lista</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../views_dashboard/pokeimg.html">
+                        <span class="icon"><ion-icon name="images-outline"></ion-icon></span>
+                        <span class="titulo">Pokemons</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../views_dashboard/berries.html">
+                        <span class="icon"><ion-icon name="stats-chart-outline"></ion-icon></span>
+                        <span class="titulo">Berries</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+                        <span class="titulo">Settings</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                        <span class="titulo">Password</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../index.html">
+                        <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                        <span class="titulo">Sing Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- main -->
+
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+        <!-- buscador -->
+                <div class="buscador">
+                
+                    <form action="" onsubmit="BuscarPokemon(event)">
+                        <input type="text" placeholder="Escribe una Berry" name="pokemon" autocomplete="off">
+                        <ion-icon name="search-outline"></ion-icon>
+                        
+                    </form>
+                </div>
+        
+        <!-- usuario -->
+            <div class="usuario">
+                <img src="../img/user.jpg" alt="">
+            </div>
+            </div>
+        <!-- cards -->
+
+        <div class="cardBx">
+            <div class="card">
+                <div>
+                    <div data-poke-nombre class="numeros">?</div>
+                    <div class="cardName">Nombre Berry</div>
+                </div>
+
+                <div class="iconBx">
+                    <img poke-sprite src="../img/logo.png" alt="">
+                </div>
+            </div>
+
+            <div class="card">
+                <div>
+                    <div data-poke-experiencia class="numeros">?</div>
+                    <div class="cardName">Tiempo Crecimiento</div>
+                </div>
+
+                <div class="iconBx">
+                    <img src="../img/flecha-hacia-arriba.png" alt="">
+                </div>
+            </div>
+
+            <div class="card">
+                <div>
+                    <div data-poke-peso class="numeros">?</div>
+                    <div class="cardName">Cosecha Max</div>
+                </div>
+
+                <div class="iconBx">
+                    <img src="../img/peso.png" alt="">
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div>
+                    <div data-poke-altura class="numeros">?</div>
+                    <div class="cardName">Tamaño</div>
+                </div>
+
+                <div class="iconBx">
+                    <img src="../img/altura.png" alt="">
+                </div>
+            </div>
+           
+        </div>
+
+
+        
+
+        <!-- Lista -->
+
+        <div class="detalles">
+            <div class="recientes">
+                <div class="cardHeader">
+                    <h2>Lista de Pokemons</h2>
+                    <a href="../views_dashboard/pokelsita.html" class="btn">View All</a>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Nombre Berry</td>
+                            <td>Tiempo de Crecimiento</td>
+                            <td>Cosecha Max</td>
+                            <td>Tamaño</td>
+                        </tr>
+                    </thead>
+                    <tbody class="contenedor-tabla">
+                      
+
+                        
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- facial -->
+
+            <div class="recientesPokemons">
+
+               
+                <div class="scaner">
+                    <div class="cara"></div>
+                    <h3>¿Maestro Pokemon?</h3>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </div>
+
+    <script src="../js/dashboard.js"></script>
+    <script src="../js/tabla.js"></script>
+    <script src="../js/graficas.js"></script>
+    <script src="../js/infodashboard.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>

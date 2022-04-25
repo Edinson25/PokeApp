@@ -31,9 +31,13 @@ function createcard(pokemon){
     name.classList.add('text');
     name.textContent = pokemon.name;
 
+    const hola = document.createElement('div');
+    card.classList.add('boxback')
+
     card.appendChild(spriteContainer);
     card.appendChild(name);
 
     pokemonContainer.appendChild(card);
 }
+
     fetchPokemons(300);

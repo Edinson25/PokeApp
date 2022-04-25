@@ -207,29 +207,7 @@ footer  .redes{
     filter: invert(0);
 }
 
-/* section .circulo{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #e51e2a;
-    clip-path: circle(70% at right -20%);
-} */
 
-/* footer{
-    background: #fff;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-footer .derechos span{
-    color: #8A3FFC;
-} */
 
 footer{
     position: relative;
@@ -316,8 +294,10 @@ footer .wave#wave4{
         padding: 150px 40px;
     }
 
-    .redes{
-        left: 40px;
+    footer .redes {
+    
+        justify-content: center;
+        
     }
 
     .contenedor{

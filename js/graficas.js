@@ -3,6 +3,8 @@ var ctx = document.getElementById('myChart').getContext('2d');
 
 var earning = document.getElementById('earning').getContext('2d');
 
+var estadisticas = document.getElementById('estadisticas').getContext('2d');
+
 var myChart = new Chart(ctx, {
     type: 'polarArea',
     data: {
@@ -60,6 +62,38 @@ var myChart = new Chart(earning, {
 
             
             
+        }]
+    },
+    options: {
+       responsive:true,
+    }
+});
+
+var estadisticas = new Chart(estadisticas, {
+    type: 'line',
+    data: {
+        labels: ['Mewtwo', 'Balbasaur', 'Gardervoir', 'Gengar', 'Pikachu', 'Charmander', 'Eevee', 'Charizard', 'Lucario', 'Squirtle', ],
+        datasets: [{
+            label: 'Pokemons',
+            data: [	427822, 352190, 218200, 246444, 2300648, 265760, 246444, 636373, 567763, 231319,241259],
+            
+            backgroundColor: [
+                'rgba(0, 245, 255 , 0.7)',
+                'rgba(182, 255, 88, 0.7)',
+                'rgba(32, 255, 0, 0.7)',
+                'rgba(103, 132, 9, 0.7)',
+                'rgba(245, 10, 209 , 0.7)',
+                'rgba(255, 104, 0, 0.7)',
+                'rgba(148, 150, 136, 0.7)',
+                'rgba(248, 255, 0 , 0.7)',
+                'rgba(186, 148, 40, 0.7)',
+                'rgba(11, 41, 135, 0.7)',
+              
+
+            ],
+
+            
+            borderColor: 'rgb(75, 192, 192)',
         }]
     },
     options: {

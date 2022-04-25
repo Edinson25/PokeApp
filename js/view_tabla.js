@@ -18,6 +18,8 @@ function fetchPokemons(number) {
 function createcard(pokemon){
     const card = document.createElement('tr');
     
+    const spriteContainer5 = document.createElement('td');
+    spriteContainer5.textContent = pokemon.id;
 
     const spriteContainer = document.createElement('td');
     spriteContainer.textContent = pokemon.name;
@@ -31,13 +33,18 @@ function createcard(pokemon){
     const spriteContainer4 = document.createElement('td');
     spriteContainer4.textContent = pokemon.height;
 
+   
+    
 
+    card.appendChild(spriteContainer5);
     card.appendChild(spriteContainer);
     card.appendChild(spriteContainer2);
     card.appendChild(spriteContainer3);
     card.appendChild(spriteContainer4);
     
+    
+    
     TableContainer.appendChild(card);
 }
 
-    fetchPokemons(20);
+    fetchPokemons(100);

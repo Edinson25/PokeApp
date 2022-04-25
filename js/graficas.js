@@ -1,4 +1,4 @@
-
+//Se llaman a las clases para guardarlas en constantes
 var ctx = document.getElementById('myChart').getContext('2d');
 
 var earning = document.getElementById('earning').getContext('2d');

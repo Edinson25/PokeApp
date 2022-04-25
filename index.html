@@ -15,7 +15,7 @@
 <body>
   
     <section>
-        <!-- <div class="circulo"></div> -->
+        
         <header>
             <a href="" class="logo">PokeApp<span>.</span></a>
             <div class="funcionNav" onclick="navFuncion()"></div>
@@ -87,6 +87,8 @@
 
     <!-- Initialize Swiper -->
     <script>
+
+      //Libreria Swiper para la animacion slide de las imagenes
       var swiper = new Swiper(".mySwiper", {
         effect: "coverflow",
         grabCursor: true,
@@ -105,12 +107,12 @@
         loop:true,
       });
 
-
+      //Cuando la resolucion disminuye y se muestra el toggle icon y le damos clic en este la clase funcionNav y navegador cambian a active, lo cual hace que se apliquen los diseños respectivos para el responsive.
       function navFuncion(){
-            const funcionNav = document.querySelector('.funcionNav');
-            const navegador= document.querySelector('.navegador')
-            funcionNav.classList.toggle('active');
-            navegador.classList.toggle('active')
+            const funcionNav = document.querySelector('.funcionNav'); //se obtiene la clase funcionNav y se guarda en una constante
+            const navegador= document.querySelector('.navegador'); //se obtiene la clase navegador y se guarda en una constante
+            funcionNav.classList.toggle('active'); //Convierte funcionNav en funcionNavactive
+            navegador.classList.toggle('active');//Convierte navegador en funcionNavactive
         }
 
       

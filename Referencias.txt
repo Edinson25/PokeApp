@@ -1,0 +1,22 @@
+Bueno basicamente, voy a referenciar de donde saque la plantilla aunque basicamente fue modificada, pero tengo que añadir que voy a referenciar el video en especifo, pero de igual manera referencio al "Youtuber" donde he aprendido el resto de diseños que basicamente es el mismo, pero de igual manera referenciare el canal de Youtube, ademas de esto referencio las paginas web utilizabas donde se obtuvo la información.
+
+Video Dashboard:
+https://www.youtube.com/watch?v=nUUsUAPEjFc
+https://www.youtube.com/watch?v=q3zc1ph5fvg
+Youtube:
+
+https://www.youtube.com/c/OnlineTutorials4Designers
+
+PokeApi:
+https://pokeapi.co
+
+Graficos:
+1.https://medium.com/qu4nt/introducción-a-la-visualización-con-python-y-2-b2d83210543f
+2.https://www.chartjs.org/docs/latest/charts/doughnut.html
+3.https://www.tableau.com/es-es/about/blog/2016/8/how-data-kid-found-his-favorite-pokemon-data-57650
+4.https://www.nintenderos.com/2020/06/este-video-nos-muestra-los-pokemon-mas-populares-desde-2004-hasta-2020/
+5.https://nintenduo.com/estos-son-los-pokemon-mas-queridos-y-odiados-por-los-fans/
+6.https://pokemon.fandom.com/wiki/Berry
+
+
+

@@ -11,7 +11,7 @@ const pokeSlots = document.querySelector('[data-poke-slots');
 
 //Se crea una constante BuscarPokemon la cual nos ayuda a "filtrar" el pokemon que el Usuario nos estan requiriendo
 const BuscarPokemon = event =>{
-    event.preventDefault();
+    event.preventDefault(); //Cualquier accion por defecto que deba producirse como resultado de este evento, no ocurrira
     const {value} =event.target.pokemon; //Se toma el valor que ingreso el usuario
     fetch(`https://pokeapi.co/api/v2/pokemon/${value.toLowerCase()}`) //Se hace un fetch para consumir la api mediante la Url, el value.toLowe case nos brinda una ayuda, ya que si el usuario ingresa el nombre del pokemon en mayusculas o minusculas lo va  a encontrar.
     .then(data=>data.json()) //La informacion se filtra por medio de un JSON
